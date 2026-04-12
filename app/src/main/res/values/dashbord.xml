@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="title_dashboard">Tableau de Bord</string>
+        <string name="status_label">État actuel du réseau</string>
+        <string name="btn_report_outage">Signaler une Coupure</string>
+        <string name="btn_report_return">Signaler le Retour</string>
+        <string name="section_recent">Signalements Récents</string>
+        <string name="section_sonabel">Infos Officielles SONABEL</string>
+        <string name="solidarite">Ensemble, informons-nous</string>
+    </resources>
+

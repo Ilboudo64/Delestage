@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "780596792360",
+    "project_id": "delestage-dcdf2",
+    "storage_bucket": "delestage-dcdf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780596792360:android:9a743759fb39b56e71f91d",
+        "android_client_info": {
+          "package_name": "com.example.delestage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd0q4bgpDzJ3aATlHqraVr32CgcIKoerw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

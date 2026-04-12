@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Delestage</string>
+    <string name="login_title">Connexion</string>
+    <string name="hint_email">Email ou Pseudo</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="btn_login">Se connecter</string>
+    <string name="btn_register">Créer un compte</string>
+    <string name="error_empty_fields">Veuillez remplir tous les champs</string>
+
+
+
+    //Signalement
+        <string name="title_signalement">SIGNALER UN ÉVÉNEMENT</string>
+        <string name="label_quartier">Dans quel quartier êtes-vous ?</string>
+        <string name="hint_quartier">Ex: Somgandé, Gounghin, Pissy...</string>
+        <string name="btn_confirmer_signalement">Confirmer le signalement</string>
+
+        <string name="msg_success_signalement">Signalement envoyé avec succès !</string>
+        <string name="msg_error_quartier_empty">Veuillez préciser le quartier SVP</string>
+
+
+</resources>

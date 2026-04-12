@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/header_rounded_bottom"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgLogoHeader"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo_sonabel" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgLogoHeader"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SONABEL Alert"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signalements communautaires"
+            android:textColor="#EEEEEE"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

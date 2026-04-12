@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_sonabel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Créer un compte"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rejoignez la communauté SONABEL Alert"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView style="@style/LabelStyle" android:text="Nom complet" />
+                <EditText
+                    android:id="@+id/edtFullName"
+                    style="@style/InputStyle"
+                    android:drawableStart="@drawable/ic_user"
+                    android:hint="Jean Dupont" />
+
+                <TextView style="@style/LabelStyle" android:text="Email" />
+                <EditText
+                    android:id="@+id/edtEmail"
+                    style="@style/InputStyle"
+                    android:drawableStart="@drawable/ic_email"
+                    android:hint="votre@email.com"
+                    android:inputType="textEmailAddress" />
+
+                <TextView style="@style/LabelStyle" android:text="Zone de résidence" />
+                <EditText
+                    android:id="@+id/edtZone"
+                    style="@style/InputStyle"
+                    android:drawableStart="@drawable/ic_location"
+                    android:hint="Sélectionnez votre zone"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+                <TextView style="@style/LabelStyle" android:text="Mot de passe" />
+                <RelativeLayout style="@style/InputLayoutStyle">
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        style="@style/InputTransparentStyle"
+                        android:hint="........."
+                        android:inputType="textPassword" />
+                    <ImageView
+                        android:id="@+id/imgEyePass" style="@style/EyeIconStyle" />
+
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum 6 caractères"
+                    android:textSize="11sp"
+                    android:textColor="#BDBDBD"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView style="@style/LabelStyle" android:text="Confirmer le mot de passe" />
+                <RelativeLayout style="@style/InputLayoutStyle">
+                    <EditText
+                        android:id="@+id/edtConfirmPassword"
+                        style="@style/InputTransparentStyle"
+                        android:hint="........."
+                        android:inputType="textPassword" />
+                    <ImageView
+                        android:id="@+id/imgEyeConfirm" style="@style/EyeIconStyle" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginVertical="16dp">
+                    <CheckBox
+                        android:id="@+id/checkTerms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="J'accepte les conditions d'utilisation et la politique de confidentialité"
+                        android:textColor="#757575"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_background_red_rounded"
+                    android:text="Créer mon compte"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="24dp"
+            android:text="Vous avez déjà un compte ? Se connecter"
+            android:textColor="#757575"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>
