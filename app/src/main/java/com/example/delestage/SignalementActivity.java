@@ -116,6 +116,12 @@ public class SignalementActivity extends AppCompatActivity {
         map.put("confirmations", 0);
         map.put("contestations", 0);
 
+        // partie ajouter :
+        map.put("timestamp", System.currentTimeMillis());
+
+        map.put("confirmations", 0);
+        map.put("contestations", 0);
+
         if (idSignalement != null) {
             mDatabase.child(idSignalement).setValue(map)
                     .addOnCompleteListener(task -> { // On utilise OnCompleteListener pour être plus sûr

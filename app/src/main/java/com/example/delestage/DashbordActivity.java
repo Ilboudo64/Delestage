@@ -53,6 +53,17 @@ public class DashbordActivity extends BaseActivity {
             setupNavigation(bottomNav, R.id.nav_accueil);
         }
 
+        // charger la page satatistic quand on clic sur ce bouton
+        CardView btnStats = findViewById(R.id.cardStats);
+
+        if (btnStats != null) {
+            btnStats.setOnClickListener(v -> {
+                // L'Intent est le "pont" vers ton travail
+                Intent intent = new Intent(DashbordActivity.this, StatisticsActivity.class);
+                startActivity(intent);
+            });
+        }
+
         // 6. Lancer l'écoute en temps réel (C'est ici que la magie opère)
         ecouterSignalements();
     }

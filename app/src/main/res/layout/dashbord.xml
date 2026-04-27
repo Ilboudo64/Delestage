@@ -205,13 +205,13 @@
                 android:orientation="horizontal"
                 android:paddingHorizontal="8dp"
                 android:weightSum="2">
-                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="65dp" android:layout_weight="1" android:layout_margin="8dp" app:cardCornerRadius="14dp">
+                <androidx.cardview.widget.CardView android:id="@+id/cardCarte" android:layout_width="0dp" android:layout_height="65dp" android:layout_weight="1" android:layout_margin="8dp" app:cardCornerRadius="14dp">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:background="#E3F2FD">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🗺️" android:textSize="20sp"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Carte Interactive" android:textColor="#1976D2" android:textStyle="bold" android:layout_marginStart="8dp"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="65dp" android:layout_weight="1" android:layout_margin="8dp" app:cardCornerRadius="14dp">
+                <androidx.cardview.widget.CardView android:id="@+id/cardStats" android:layout_width="0dp" android:layout_height="65dp" android:layout_weight="1" android:layout_margin="8dp" app:cardCornerRadius="14dp">
                     <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:background="#F3E5F5">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📊" android:textSize="20sp"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Statistiques" android:textColor="#7B1FA2" android:textStyle="bold" android:layout_marginStart="8dp"/>

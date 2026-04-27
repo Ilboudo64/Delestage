@@ -29,7 +29,8 @@ public abstract class BaseActivity extends AppCompatActivity {
             } else if (id == R.id.nav_recents) {
                 intent = new Intent(this, RecentsActivity.class);
             } else if (id == R.id.nav_historique) {
-                intent = new Intent(this, HistoryActivity.class);
+                // MODIFICATION : On ouvre TA page de statistiques !
+                intent = new Intent(this, StatisticsActivity.class);
             } else if (id == R.id.nav_info) {
                 intent = new Intent(this, InfoSonabelActivity.class);
             }
