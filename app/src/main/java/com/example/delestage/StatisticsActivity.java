@@ -386,8 +386,6 @@ public class StatisticsActivity extends BaseActivity {
         // On force l'affichage de tous les labels
         xAxis.setLabelCount(sortedZones.size());
 
-        xAxis.setLabelCount(sortedZones.size());
-
         barChartZones.invalidate();
     }
 }

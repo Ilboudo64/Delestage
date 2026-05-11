@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.DataSnapshot;
@@ -55,11 +57,19 @@ public class DashbordActivity extends BaseActivity {
 
         // charger la page satatistic quand on clic sur ce bouton
         CardView btnStats = findViewById(R.id.cardStats);
-
         if (btnStats != null) {
             btnStats.setOnClickListener(v -> {
                 // L'Intent est le "pont" vers ton travail
                 Intent intent = new Intent(DashbordActivity.this, StatisticsActivity.class);
+                startActivity(intent);
+            });
+        }
+
+        // charger l'activité carte intéractive
+        View btnCarte = findViewById(R.id.cardCarte); // "View" marche pour TOUS les composants
+        if (btnCarte != null) {
+            btnCarte.setOnClickListener(v -> {
+                Intent intent = new Intent(DashbordActivity.this, MapsActivity.class);
                 startActivity(intent);
             });
         }
